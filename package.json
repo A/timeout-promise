@@ -1,0 +1,14 @@
+{
+  "name": "watcher",
+  "dependencies": {
+    "jquery": "*"
+  },
+  "devDependencies": {
+    "jsdom": "*",
+    "mocha": "*",
+    "should": "*"
+  },
+  "scripts": {
+     "test": "mocha"
+  }
+}

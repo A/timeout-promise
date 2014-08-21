@@ -1,0 +1,25 @@
+{
+  "browser": false,
+  "curly": false,
+  "expr": true,
+  "indent": 2,
+  "jquery": false,
+  "laxcomma": true,
+  "laxbreak": true,
+  "maxdepth": 3,
+  "node": true,
+  "trailing": true,
+  "quotmark": "single",
+  "smarttabs": true,
+  "strict": true,
+  "undef": true,
+  "white": true,
+  "globals": {
+    "describe": false,
+    "it": false,
+    "before": false,
+    "beforeEach": false,
+    "after": false,
+    "afterEach": false
+  }
+}
