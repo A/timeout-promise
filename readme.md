@@ -5,6 +5,13 @@
 
 Simple wrapper to flow control promises.
 
+
+### Install
+
+```
+npm i -S promise-watcher
+```
+
 ### Example
 
 ```JS
