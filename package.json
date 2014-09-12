@@ -1,5 +1,7 @@
 {
   "name": "promise-watcher",
+  "version": "0.1.0",
+  "description": "simple deferred wrapper for timeout intervals",
   "dependencies": {},
   "devDependencies": {
     "jquery": "*",
