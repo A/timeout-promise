@@ -1,9 +1,8 @@
 {
-  "name": "watcher",
-  "dependencies": {
-    "jquery": "*"
-  },
+  "name": "promise-watcher",
+  "dependencies": {},
   "devDependencies": {
+    "jquery": "*",
     "jsdom": "*",
     "mocha": "*",
     "should": "*"
