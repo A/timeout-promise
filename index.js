@@ -11,7 +11,6 @@
 })(function($) {
   'use strict';
   var Watcher = function (opts) {
-    this.observable   = opts.observable;
     this.counter      = opts.counter || Infinity;
     this.interval     = opts.interval || 1000;
     this.deferred     = new $.Deferred();
@@ -20,10 +19,10 @@
   };
   Watcher.prototype.watch = function (interval, counts) {
     this.counter--;
-    this.deferred.notify(this.observable, this.deferred);
+    this.deferred.notify(this.deferred);
     this.counter > 0
       ? setTimeout(this.watch.bind(this), this.interval)
-      : this.deferred.reject(this.observable);
+      : this.deferred.reject();
   };
   return Watcher;
 });
