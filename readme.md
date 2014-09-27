@@ -11,7 +11,7 @@ and adverts loaded optionaly.
 
 ```
 npm install timeout-promise
-``
+```
 
 ### Example
 
