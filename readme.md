@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/shuvalov-anton/promise-watcher.svg)](https://travis-ci.org/shuvalov-anton/promise-watcher)
 [![Code Climate](https://codeclimate.com/github/shuvalov-anton/irverbs/badges/gpa.svg)](https://codeclimate.com/github/shuvalov-anton/promise-watcher)
 
-## Promise Watcher
+## Timeout Promise
 
 Simple util to check async changes that hasn't any callback API. Just dirty
 checks based on promise `progress` triggered by intervals. Useful for banners
