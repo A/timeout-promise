@@ -1,5 +1,5 @@
 {
-  "name": "promise-watcher",
+  "name": "timeout-promise",
   "version": "0.1.0",
   "description": "simple deferred wrapper for timeout intervals",
   "dependencies": {},
@@ -10,6 +10,32 @@
     "should": "*"
   },
   "scripts": {
-     "test": "mocha"
-  }
+    "test": "mocha"
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shuvalov-anton/timeout-promise.git"
+  },
+  "keywords": [
+    "promise",
+    "timeout",
+    "async",
+    "load",
+    "timer",
+    "counter",
+    "dirty",
+    "checks",
+    "counter",
+    "progress"
+  ],
+  "author": "Shuvalov Anton <anton@shuvalov.info>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shuvalov-anton/timeout-promise/issues"
+  },
+  "homepage": "https://github.com/shuvalov-anton/timeout-promise"
 }
