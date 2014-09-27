@@ -1,6 +1,10 @@
 [![Build Status](https://travis-ci.org/shuvalov-anton/promise-watcher.svg)](https://travis-ci.org/shuvalov-anton/promise-watcher)
 [![Code Climate](https://codeclimate.com/github/shuvalov-anton/irverbs/badges/gpa.svg)](https://codeclimate.com/github/shuvalov-anton/promise-watcher)
 
+# Moved
+
+Please use [timeout-promise](https://www.npmjs.org/package/timeout-promise)
+
 ## Promise Watcher
 
 Simple wrapper to flow control promises.

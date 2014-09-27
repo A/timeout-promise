@@ -11,6 +11,7 @@
 })(function($) {
   'use strict';
   var Watcher = function (opts) {
+    console.log('promise-watcher was renamed. Please install https://www.npmjs.org/package/timeout-promise')
     this.observable   = opts.observable;
     this.counter      = opts.counter || Infinity;
     this.interval     = opts.interval || 1000;
