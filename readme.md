@@ -10,8 +10,8 @@ and adverts loaded optionaly.
 ### Install
 
 ```
-npm i -S promise-watcher
-```
+npm install timeout-promise
+``
 
 ### Example
 
