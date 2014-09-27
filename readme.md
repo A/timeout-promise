@@ -3,8 +3,9 @@
 
 ## Promise Watcher
 
-Simple wrapper to flow control promises.
-
+Simple util to check async changes that hasn't any callback API. Just dirty
+checks based on promise `progress` triggered by intervals. Useful for banners
+and adverts loaded optionaly.
 
 ### Install
 
@@ -15,22 +16,22 @@ npm i -S promise-watcher
 ### Example
 
 ```JS
+var el = $('.js-adverts'); 
 var promise = new Watcher({ 
-  observable: $('.js-super-banners'), 
-  counter: 10,
-  interval: 1000
+  counter: 10, // after that attempts promis will be rejected
+  interval: 1000 // interval in ms to trigger .progress callback
 });
 
 promise
-  .progress(function ($el, promise) {
+  .progress(function (promise) {
     // if somthing is loaded
     $el.find('.banner').length
-      && promise.resolve($el);
+      && promise.resolve();
   })
-  .done(function($el) {
+  .done(function() {
     $el.show();
   })
-  .fail(function($el) {
+  .fail(function() {
     $el.remove();
   });
 ```
