@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/shuvalov-anton/promise-watcher.svg)](https://travis-ci.org/shuvalov-anton/promise-watcher)
-[![Code Climate](https://codeclimate.com/github/shuvalov-anton/irverbs/badges/gpa.svg)](https://codeclimate.com/github/shuvalov-anton/promise-watcher)
+[![Build Status](https://travis-ci.org/shuvalov-anton/timeout-promise.svg?branch=master)](https://travis-ci.org/shuvalov-anton/timeout-promise)
+[![Code Climate](https://codeclimate.com/github/shuvalov-anton/timeout-promise/badges/gpa.svg)](https://codeclimate.com/github/shuvalov-anton/timeout-promise)
 
 ## Timeout Promise
 
