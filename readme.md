@@ -1,6 +1,8 @@
 [![Build Status](https://travis-ci.org/shuvalov-anton/timeout-promise.svg?branch=master)](https://travis-ci.org/shuvalov-anton/timeout-promise)
 [![Code Climate](https://codeclimate.com/github/shuvalov-anton/timeout-promise/badges/gpa.svg)](https://codeclimate.com/github/shuvalov-anton/timeout-promise)
 
+[![NPM](https://nodei.co/npm/timeout-promise.png?downloads=true)](https://nodei.co/npm/timeout-promise/)
+
 ## Timeout Promise
 
 Simple util to check async changes that hasn't any callback API. Just dirty
