@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Timeout Promise : Simple promise based util to check async changes that hasn&#39;t any callback API">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Timeout Promise</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/shuvalov-anton/timeout-promise">View on GitHub</a>
+
+          <h1 id="project_title">Timeout Promise</h1>
+          <h2 id="project_tagline">Simple promise based util to check async changes that hasn&#39;t any callback API</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/shuvalov-anton/timeout-promise/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/shuvalov-anton/timeout-promise/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p><a href="https://travis-ci.org/shuvalov-anton/timeout-promise"><img src="https://travis-ci.org/shuvalov-anton/timeout-promise.svg?branch=master" alt="Build Status"></a>
+<a href="https://codeclimate.com/github/shuvalov-anton/timeout-promise"><img src="https://codeclimate.com/github/shuvalov-anton/timeout-promise/badges/gpa.svg" alt="Code Climate"></a></p>
+
+<p>Simple util to check async changes that hasn't any callback API. Just dirty
+checks based on promise <code>progress</code> triggered by intervals. Useful for banners
+and adverts loaded optionaly.</p>
+
+<h3>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install</h3>
+
+<pre><code>npm install timeout-promise
+</code></pre>
+
+<h3>
+<a id="example" class="anchor" href="#example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h3>
+
+<div class="highlight highlight-JS"><pre><span class="pl-s">var</span> el <span class="pl-k">=</span> $(<span class="pl-s1"><span class="pl-pds">'</span>.js-adverts<span class="pl-pds">'</span></span>); 
+<span class="pl-s">var</span> promise <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Watcher</span>({ 
+  counter<span class="pl-k">:</span> <span class="pl-c1">10</span>, <span class="pl-c">// after that attempts promis will be rejected</span>
+  interval<span class="pl-k">:</span> <span class="pl-c1">1000</span> <span class="pl-c">// interval in ms to trigger .progress callback</span>
+});
+
+promise
+  .progress(<span class="pl-st">function</span> (<span class="pl-vpf">promise</span>) {
+    <span class="pl-c">// if somthing is loaded</span>
+    $el.<span class="pl-s3">find</span>(<span class="pl-s1"><span class="pl-pds">'</span>.banner<span class="pl-pds">'</span></span>).<span class="pl-sc">length</span>
+      <span class="pl-k">&amp;&amp;</span> promise.resolve();
+  })
+  .done(<span class="pl-st">function</span>() {
+    $el.show();
+  })
+  .fail(<span class="pl-st">function</span>() {
+    $el.<span class="pl-s3">remove</span>();
+  });</pre></div>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Timeout Promise maintained by <a href="https://github.com/shuvalov-anton">shuvalov-anton</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
