@@ -5,9 +5,9 @@
 
 ## Timeout Promise
 
-Simple util to check async changes that hasn't any callback API. Just dirty
+Simple utility to check async changes that hasn't any callback API. Just dirty
 checks based on promise `progress` triggered by intervals. Useful for banners
-and adverts loaded optionaly.
+and advertisement loaded optionally.
 
 ### Install
 
@@ -20,7 +20,7 @@ npm install timeout-promise
 ```JS
 var el = $('.js-adverts'); 
 var promise = new Watcher({ 
-  counter: 10, // after that attempts promis will be rejected
+  counter: 10, // promise will be rejected after that number of attempts 
   interval: 1000 // interval in ms to trigger .progress callback
 });
 
